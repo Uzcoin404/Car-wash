@@ -8,6 +8,6 @@ menuBtn.addEventListener('click', function(){
 });
 const date = new Date();
 let currentDate = String(date.getDate()).padStart(2, '0')  + '.' + String(date.getMonth() + 1).padStart(2, '0') + '.' + date.getFullYear();
-let currentTime = date.getHours() + ':' + date.getMinutes() + ':' + date.getSeconds();
+let currentTime = String(date.getHours()).padStart(2, '0') + ':' + String(date.getMinutes()).padStart(2, '0') + ':' + String(date.getSeconds()).padStart(2, '0');
 dateText.innerHTML = currentDate;
 clockText.innerHTML = currentTime;
