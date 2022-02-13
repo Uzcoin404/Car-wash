@@ -185,6 +185,12 @@
     .nav_details_text, .weather_card_date{
         font-size: 16px;
     }
+    aside{
+        overflow-y: scroll;
+    }
+    .tooltiptext{
+        display: none;
+    }
 }
 @media (max-width: 768px) {
     .main_card_weather{
@@ -244,6 +250,9 @@
     }
 }
 @media (max-width: 440px) {
+    .aside_link {
+        margin-bottom: 20px;
+    }
     .main_card_weatherm, .main_card{
         grid-column: span 10 !important;
     }
@@ -266,5 +275,22 @@
         width: 8px;
         height: 8px;
         right: 15px;
+    }
+    .order_info{
+        min-width: 275px;
+    }
+    .car_model, .car_numb_desk, .wash_type_blog, .service_type_text, .descr_blog, .wash_cost{
+        font-size: 20px;
+        font-weight: 500;
+    }
+    .wash_type, .descr {
+        font-size: 18px;
+    }
+    .btn{
+        height: 50px;
+        font-size: 20px;
+    }
+    .nav_details{
+        flex-wrap: wrap;
     }
 }
