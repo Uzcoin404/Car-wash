@@ -1,0 +1,617 @@
+@import url(all.min.css);
+@import url(fonts.css);
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins";
+    list-style: none;
+    text-decoration: none;
+    outline: none;
+}
+body{
+    max-height: 100vh;
+}
+img{
+    object-fit: cover;
+}
+button{
+    border: none;
+    outline: none;
+    background: transparent;
+    cursor: pointer;
+}
+
+::-webkit-scrollbar{
+    width: 10px;
+    border: 1px solid #FFFFFF80;
+    background: #fff;
+    border-radius: 10px;    
+}
+::-webkit-scrollbar-thumb{
+    background: #94B8FF;
+    border-radius: 10px;
+}
+
+.wrapper{
+    background: #E5E5E5;
+    height: 100vh;
+    display: flex;
+    position: relative;
+}
+main{
+    width: 100%;
+    height: 100vh;
+    overflow-y: auto;
+    padding-bottom: 15px;
+}
+.container{
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+.menu_btn{
+    display: none;
+}
+/************************************************ Aside styling ******************************************/
+.aside{
+    width: 150px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background: #fff;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    overflow-y: auto;
+    padding: 70px 0;
+}
+.aside_list, .aside_footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.aside_link{
+    position: relative;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    border: 1px solid #C5C7D3;
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 50px;
+    color: #C5C7D3;
+    transition: all .3s;
+}
+.aside_link i{
+    line-height: 70px;
+}
+.aside_link:hover, .aside_link.active, .aside_link:focus{
+    background: #94B8FF;
+    color: #fff;
+    border-color: #94B8FF;
+}
+.aside_footer .aside_link{
+    margin: 0;
+}
+.aside_link .tooltiptext{
+    visibility: hidden;
+    width: max-content;
+    background: #fff;
+    color: #000;
+    text-align: center;
+    padding: 7px 16px;
+    border-radius: 2px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 110%;
+    z-index: 99;
+    font-size: 14px;
+    line-height: 21px;
+}
+.aside_link:hover .tooltiptext {
+    visibility: visible;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+.tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 100%;
+    margin-top: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent #fff transparent transparent;
+}
+/************************************************ Nav styling ******************************************/
+
+nav .container{
+    margin: 50px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.title{
+    font-size: 36px;
+    line-height: 54px;
+    font-weight: 600;
+    color: #333333;
+}
+.nav_details{
+    display: flex;
+    align-items: center;
+    padding: 25px;
+    background: #fff;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.06);
+    border-radius: 10px;
+}
+.nav_content{
+    padding-right: 40px;
+    display: flex;
+    align-items: center;
+}
+.nav_weather{
+    padding-right: 0;
+}
+.nav_details i{
+    color: #94B8FF;
+    font-size: 30px;
+    padding-right: 10px;
+}
+.nav_details_text, .weather_card_date{
+    font-size: 24px;
+    line-height: 36px;
+    font-weight: 500;
+    color: #333;
+}
+/********************************************** Main page styling ******************************************/
+.main_cards{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 100px;
+}
+.main_card{
+    grid-column: span 3;
+    height: 350px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    transition: all .3s;
+}
+.main_card:nth-child(1), .main_card:nth-child(4){
+    background: #94B8FF;
+}
+.main_card:nth-child(2), .main_card:nth-child(5){
+    background: #FFB803;
+}
+.main_card_weather{
+    grid-column: span 4;
+    grid-row: span 2;
+    height: auto !important;
+    background: linear-gradient(192.05deg, #47BFDF 0%, #4A91FF 100%);
+    display: block;
+    border-radius: 15px;
+    padding: 50px;
+    position: relative;
+    overflow: hidden;
+}
+.main_card_weather::before{
+    content: "";
+    position: absolute;
+    top: 120px;
+    left: 0;
+    width: 112px;
+    height: 235px;
+    background: url(../img/weather_vector2.png) no-repeat center / cover;
+}
+.main_card_weather::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 150px;
+    width: 425px;
+    height: 366px;
+    background: url(../img/weather_vector1.png) no-repeat center / cover;
+}
+.main_card img{
+    height: 130px;
+    margin-bottom: 25px;
+}
+.main_card_text, .weather_card_title{
+    font-size: 36px;
+    line-height: 54px;
+    font-weight: 500;
+}
+.main_card_value{
+    font-size: 42px;
+    font-weight: 600;
+}
+.main_card:hover:not(.main_card_weather){
+    transform: scale(0.9);
+}
+.main_card_header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding-bottom: 60px;
+}
+.main_card_content{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    overflow-x: auto;
+}
+.main_card_content::-webkit-scrollbar{
+    height: 6px;
+    border: 1px solid #FFFFFF80;
+    background: transparent;
+    border-radius: 10px;
+}
+.main_card_content::-webkit-scrollbar-thumb{
+    background: #fff;
+}
+.weather_card_days img{
+    width: 43px;
+    height: 43px;
+    margin: 24px 0;
+}
+.weather_card_days{
+    padding: 12px 15px;
+    margin-bottom: 30px;
+}
+.weather_card_days.active{
+    background: rgba(255, 255, 255, 0.2);
+    /* backdrop-filter: blur(2px); */
+    border-radius: 20px;
+    border: 1px solid;
+}
+.weather_card_weeks{
+    height: 300px;
+    overflow-y: auto;
+}
+.weather_card_weeks::-webkit-scrollbar{
+    width: 6px;
+    border: 1px solid #FFFFFF80;
+    background: transparent;
+    border-radius: 10px;
+}
+.weather_card_weeks::-webkit-scrollbar-thumb{
+    background: #fff;
+    border-radius: 10px;
+}
+.weather_card_week{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 25px;
+    padding-right: 80px;
+}
+.weather_week_day, .weather_week_indi{
+    font-size: 18px;
+    line-height: 27px;
+    font-weight: 600;
+}
+.weather_week_indi{
+    font-weight: 500;
+}
+.weather_card_week img{
+    width: 43px;
+    height: 43px;
+    margin: 0;
+}
+.card_footer_title{
+    margin: 10px 0;
+}
+/********************************************* Order page styling *****************************************/
+.order_form{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 70px;
+    background: #fff;
+    border-radius: 20px;
+    padding: 50px 40px;
+}
+.order_car, .order_services, .order_info{
+    grid-column: span 2;
+}
+.order_title{
+    font-size: 36px;
+    line-height: 24px;
+    font-weight: 600;
+    padding-bottom: 40px;
+    text-align: center;
+}
+.order_input, .select{
+    width: 100%;
+    max-width: 450px;
+    height: 70px;
+    border-radius: 10px;
+    border: 2px solid #94B8FF;
+    padding: 20px 30px;
+    font-size: 24px;
+    font-weight: 500;
+    background: #fff;
+    transition: all .3s;
+    margin-bottom: 30px;
+    color: #222;
+}
+.order_textarea{
+    height: 100px !important;
+    min-height: 70px;
+    max-height: 150px;
+    resize: vertical;
+}
+.order_input::placeholder{
+    font-size: 24px;
+    line-height: 24px;
+    font-weight: 500;
+    color: #C5C7D3;
+    letter-spacing: -0.011em;
+}
+.order_input:focus{
+    max-width: 450px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 3px 8px;
+    outline: none;
+}
+
+.select{
+    position: relative;
+    text-transform: capitalize;
+    text-align: left;
+    cursor: pointer;
+    color: #333;
+    line-height: 10px;
+}
+.select::before{
+    content: "";
+    position: absolute;
+    right: 30px;
+    top: 50%;
+    transform: translateY(-50%) rotate(45deg);
+    width: 12px;
+    height: 12px;
+    border-right: 3px solid #333;
+    border-bottom: 3px solid #333;
+}
+.select:hover{
+    background: #94B8FF;
+}
+.select.active{
+    background: #94B8FF;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+.fieldset{
+    width: 100%;
+    border: none;
+    position: relative;
+}
+.options{
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    max-width: 450px;
+    height: fit-content;
+    background: #fff;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    overflow: hidden;
+    display: none;
+    z-index: 99;
+}
+.options.active{
+    display: block;
+}
+.options .item{
+    text-transform: capitalize;
+    font-size: 24px;
+    font-weight: 500;
+    color: #333;
+    width: 100%;
+    height: 50px;
+    padding: 0 30px;
+    line-height: 50px;
+    cursor: pointer;
+    transition: all .3s;
+}
+.options .item.active{
+    background: #94B8FF;
+}
+.fieldset_switch{
+    border: 2px solid #94B8FF;
+    max-width: 450px;
+    border-radius: 10px;
+    padding: 20px 0px 30px 30px;
+    display: flex;
+    flex-direction: column;
+}
+.order_switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 30px;
+    margin-bottom: 20px;
+}
+.order_switch label{
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    transform: translateY(-50%);
+    padding-left: 20px;
+    width: max-content;
+    font-size: 24px;
+    line-height: 24px;
+    font-weight: 500;
+    color: #333;
+}
+.order_switch input { 
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+.switch_slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #C5C7D3;
+    -webkit-transition: .3s;
+    transition: .3s;
+    border-radius: 30px;
+}
+.switch_slider:before {
+    position: absolute;
+    content: "";
+    height: 22px;
+    width: 22px;
+    left: 4px;
+    bottom: 4px;
+    background-color: #fff;
+    -webkit-transition: .3s;
+    transition: .3s;
+    border-radius: 50%
+}
+.order_switch input:checked + .switch_slider {
+    background-color: #94B8FF;
+}
+.order_switch input:focus + .switch_slider {
+    box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.25);
+} 
+.order_switch input:checked + .switch_slider:before {
+    -webkit-transform: translateX(28px);
+    -ms-transform: translateX(28px);
+    transform: translateX(28px);
+}
+.order_info{
+    min-width: 360px;
+}
+.order_details{
+    padding: 20px 30px;
+    border: 2px solid #94B8FF;
+    border-radius: 10px;
+    color: #333;
+}
+.car_brand{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0 0;
+}
+.car_model, .car_numb_desk, .wash_type_blog, .service_type_text, .descr_blog, .wash_cost{
+    font-size: 24px;
+    line-height: 24px;
+    font-weight: 500;
+    padding-left: 10px;
+    color: #333;
+    box-sizing: border-box;
+}
+.car_number_blog{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.car_numb_desk{
+    border: 2px solid #333;
+    padding: 5px 0;
+    border-radius: 5px;
+    padding-left: 0;
+    font-weight: 600;
+    margin-top: 15px;
+    margin-right: 5px;
+}
+.territory_code{
+    padding: 0 5px;
+    border-right: 2px solid #333;
+}
+.car_number{
+    padding: 0 15px;
+}
+.car_phone_number{
+    border: 2px solid #94B8FF;
+    box-sizing: border-box;
+    border-radius: 5px;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 500;
+    padding: 5px 10px;
+    margin-top: 15px;
+}
+.wash_type_blog{
+    display: flex;
+    align-items: center;
+    padding: 15px 0 0px;
+}
+.wash_type, .descr{
+    font-weight: 300;
+    padding-left: 10px;
+    font-size: 22px;
+}
+.service_type_blog{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-top: 5px;
+}
+.service_type_text{
+    padding-left: 0;
+}
+.service_type{
+    margin: 5px;
+    padding: 0px 10px;
+    font-size: 14px;
+    line-height: 21px;
+    border-radius: 50px;
+    cursor: pointer;
+}
+.service_type:nth-child(4n+2){
+    background: #BED4FF;
+}
+.service_type:nth-child(4n+1){
+    background: #F4C7FF;
+}
+.service_type:nth-child(4n+3){
+    background: #FFE0CF;
+}
+.service_type:nth-child(4n+4){
+    background: #FEC9DC;
+}
+.descr_blog{
+    padding: 0 0 40px;
+    display: flex;
+    align-items: center;
+    padding-top: 5px;
+}
+.wash_cost{
+    padding-left: 0;
+    text-align: center;
+    padding-bottom: 5px;
+}
+.btn{
+    max-width: 320px;
+    width: 100%;
+    height: 60px;
+    background: #94B8FF;
+    color: #fff;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 36px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+}
+.order_btn_blog{
+    display: flex;
+    justify-content: center;
+}

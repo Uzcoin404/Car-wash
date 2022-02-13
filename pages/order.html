@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car wash | Bosh sahifa</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/media.css">
+</head>
+<body>
+    
+    <div class="wrapper">
+        <aside class="aside">
+            <div class="aside_list">
+                <button class="aside_link menu_btn"><i class="fas fa-bars"></i></button>
+                <a href="#" class="aside_link"><i class="fas fa-house"></i><span class="tooltiptext">Bosh sahifa</span></a>
+                <a href="#" class="aside_link active"><i class="fas fa-plus-square"></i><span class="tooltiptext">Buyurtma olish</span></a>
+                <a href="#" class="aside_link"><i class="fas fa-car"></i><span class="tooltiptext">Navbat</span></a>
+                <a href="#" class="aside_link"><i class="fas fa-car-wash"></i><span class="tooltiptext">Yuvilmoqda</span></a>
+                <a href="#" class="aside_link"><i class="fas fa-usd-square"></i><span class="tooltiptext"></span></a>
+            </div>
+            <div class="aside_footer">
+                <a href="#" class="aside_link"><i class="fas fa-cog"></i><span class="tooltiptext">Sozlamalar</span></a>
+            </div>
+        </aside>
+        <main class="main">
+            <nav class="nav">
+                <div class="container">
+                    <h1 class="title">Buyurtma olish</h1>
+                    <div class="nav_details">
+                        <div class="nav_content nav_clock">
+                            <span class="clock_icon"><i class="fas fa-clock"></i></span>
+                            <span class="nav_details_text clock_text">10:21:24</span>
+                        </div>
+                        <div class="nav_content nav_date">
+                            <span class="date_icon"><i class="fas fa-calendar-alt"></i></span>
+                            <span class="nav_details_text date_text">12.01.2022</span>
+                        </div>
+                        <div class="nav_content nav_weather">
+                            <span class="weather_icon"><i class="fas fa-cloud-sun"></i></span>
+                            <span class="nav_details_text weather_text">12°</span>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <div class="content">
+                <div class="container">
+                    <form action="#" class="get_order order_form">
+                        <div class="order_car">
+                            <h3 class="order_title">Mashina</h3>
+                            <fieldset class="fieldset">
+                                <button class="select" type="button" name="brand" value="Markani tanlang">Markani tanlang</button>
+                                <div class="options">
+                                    <p class="item active" value="none">Markani tanlang</p>
+                                    <p class="item">Chevrolet</p>
+                                </div>
+                            </fieldset>
+                            <fieldset class="fieldset">
+                                <button class="select" type="button" name="model" value="Modelni tanlang">Modelni tanlang</button>
+                                <div class="options">
+                                    <p class="item active" value="none">Modelni tanlang</p>
+                                    <p class="item">Malibu</p>
+                                    <p class="item">Gentra</p>
+                                    <p class="item">Spark</p>
+                                    <p class="item">Nexia</p>
+                                    <p class="item">Damas</p>
+                                    <p class="item">Matiz</p>
+                                </div>
+                            </fieldset>
+                            <fieldset class="fieldset">
+                                <button class="select" type="button" name="color" value="Rangni tanlang">Rangni tanlang</button>
+                                <div class="options">
+                                    <p class="item active" value="none">Rangni tanlang</p>
+                                    <p class="item">Oq</p>
+                                    <p class="item">Qora</p>
+                                    <p class="item">Qizil</p>
+                                    <p class="item">Sariq</p>
+                                </div>
+                            </fieldset>
+                            <fieldset class="fieldset">
+                                <input type="text" class="order_input" name="car_number" placeholder="Davlat raqami">
+                            </fieldset>
+                            <fieldset class="fieldset">
+                                <input type="number" class="order_input" name="phone_number" placeholder="Telefon raqami">
+                            </fieldset>
+                            <fieldset class="fieldset">
+                                <textarea class="order_input order_textarea" name="description" placeholder="Izoh"></textarea>
+                            </fieldset>
+                        </div>
+                        <div class="order_services">
+                            <h3 class="order_title">Xizmatlar</h3>
+                            <fieldset class="fieldset">
+                                <button class="select" type="button" name="territory_code" value="Hudud raqami">Hudud raqami</button>
+                                <div class="options">
+                                    <p class="item active" value="none">Hudud raqami</p>
+                                    <p class="item">01</p>
+                                    <p class="item">10</p>
+                                    <p class="item">20</p>
+                                    <p class="item">25</p>
+                                    <p class="item">30</p>
+                                    <p class="item">40</p>
+                                    <p class="item">50</p>
+                                    <p class="item">60</p>
+                                    <p class="item">70</p>
+                                    <p class="item">75</p>
+                                    <p class="item">80</p>
+                                    <p class="item">85</p>
+                                    <p class="item">90</p>
+                                    <p class="item">95</p>
+                                </div>
+                            </fieldset>
+                            <fieldset class="fieldset">
+                                <button class="select" type="button" name="wash_type" value="Yuvish turi">Yuvish turi</button>
+                                <div class="options">
+                                    <p class="item active" value="none">Yuvish turi</p>
+                                    <p class="item">To'liq</p>
+                                    <p class="item">Faqat ichki qism</p>
+                                    <p class="item">Faqat tashqi qism</p>
+                                </div>
+                            </fieldset>
+                            <fieldset class="fieldset fieldset_switch">
+                                <label class="order_switch">
+                                    <input type="checkbox" name="vacuum_cleaner" checked>
+                                    <span class="switch_slider"></span>
+                                    <label for="vacuum_cleaner">Chang yutgich</label>
+                                </label>
+                                <label class="order_switch">
+                                    <input type="checkbox" name="bubbler" checked>
+                                    <span class="switch_slider"></span>
+                                    <label for="bubbler">Ko‘pirtirgich</label>
+                                </label>
+                                <label class="order_switch">
+                                    <input type="checkbox" name="Fragrance" checked>
+                                    <span class="switch_slider"></span>
+                                    <label for="Fragrance">Hushbo‘ylik</label>
+                                </label>
+                                <label class="order_switch">
+                                    <input type="checkbox" name="vacuum_cleaner">
+                                    <span class="switch_slider"></span>
+                                    <label for="vacuum_cleaner">Chang yutgich</label>
+                                </label>
+                                <label class="order_switch">
+                                    <input type="checkbox" name="bubbler">
+                                    <span class="switch_slider"></span>
+                                    <label for="bubbler">Ko‘pirtirgich</label>
+                                </label>
+                                <label class="order_switch">
+                                    <input type="checkbox" name="Fragrance">
+                                    <span class="switch_slider"></span>
+                                    <label for="Fragrance">Hushbo‘ylik</label>
+                                </label>
+                                <label class="order_switch">
+                                    <input type="checkbox" name="Fragrance" checked>
+                                    <span class="switch_slider"></span>
+                                    <label for="Fragrance">Namlik shampuni</label>
+                                </label>
+                            </fieldset>
+                        </div>
+                        <div class="order_info">
+                            <h3 class="order_title">Ma'lumotlar</h3>
+                            <div class="order_details">
+                                <img src="../img/malibu.png" alt="" class="car_img">
+                                <div class="car_brand">
+                                    <img src="../img/chevrolet-logo.png" alt="" class="car_brand_logo">
+                                    <span class="car_model">Malibu oq</span>
+                                </div>
+                                <div class="car_number_blog">
+                                    <div class="car_numb_desk">
+                                        <span class="territory_code">60</span>
+                                        <span class="car_number">A 123 NN</span>
+                                    </div>
+                                    <div class="car_phone_number">+998 90 622 50 22</div>
+                                </div>
+                                <div class="wash_type_blog">
+                                    <p class="wash_type_text">Yuvish turi:</p>
+                                    <span class="wash_type">To'liq</span>
+                                </div>
+                                <div class="service_type_blog">
+                                    <span class="service_type_text">Xizmat turi:</span>
+                                    <span class="service_type">changyutgich</span>
+                                    <span class="service_type">ko'pirtirgich</span>
+                                    <span class="service_type">xushbo'ylik</span>
+                                    <span class="service_type">namlik shampuni</span>
+                                </div>
+                                <div class="descr_blog">
+                                    <p class="descr_text">Izoh:</p>
+                                    <span class="descr">Kechgi soat 21:00ga</span>
+                                </div>
+                                <p class="wash_cost">Narxi: 40 000 UZS</p>
+                                <div class="order_btn_blog"><button type="submit" class="btn order_btn">Navbatga olish</button></div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="../js/script.js"></script>
+
+</body>
+</html>

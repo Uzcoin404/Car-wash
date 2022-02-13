@@ -1,0 +1,270 @@
+@media (min-width: 1660px) {
+    .container{
+        max-width: 1600px;   
+    }
+}
+@media (max-width: 1660px) {
+    .container{
+        max-width: 1360px;
+    }
+    .main_cards{
+        grid-gap: 50px; 
+    }
+    .main_card_value{
+        font-size: 40px;
+        padding: 0 8px;
+        text-align: center;
+    }
+    .order_switch label{
+        font-size: 22px;
+    }
+    .order_form {
+        padding: 40px 30px;
+    }
+}
+@media (max-width: 1400px) {
+    .order_switch label, .order_input::placeholder{
+        font-size: 20px;
+        word-wrap: normal;
+        width: 300%;
+        transition: all 0s;
+        padding-left: 10px;
+    }
+    .select, .order_input{
+        font-size: 20px;
+        height: 60px;
+    }
+    .select::before{
+        width: 10px;
+        height: 10px;
+    }
+    .order_form{
+        grid-gap: 40px;
+    }
+    .order_details{
+        padding: 20px;
+    }
+    .fieldset_switch{
+        padding: 20px 0 20px 20px;
+    }
+    .car_img{
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        margin: 0 auto;
+    }
+    .container{
+        max-width: 1250px;
+    }
+    .main_card_value{
+        font-size: 30px;
+    }
+    .main_card_text{
+        font-size: 26px;
+    }
+    .main_card_img{
+        width: 100px;
+        height: 100px !important;
+    }
+    .main_card{
+        height: 300px;
+        padding: 10px 0;
+    }
+    .main_card_header{
+        padding-bottom: 30px;
+    }
+    .main_card_weather{
+        padding: 20px 30px;
+    }
+    nav .container{
+        margin: 25px auto;
+    }
+    aside{
+        padding: 30px 0 !important;
+        width: 80px !important;
+    }
+    .aside_link{
+        width: 50px;
+        height: 50px;
+        font-size: 28px;
+        margin-bottom: 30px;
+    }
+    .aside_link i{
+        line-height: 50px;
+        
+    }
+}
+@media (max-width: 1100px) {
+    .order_car, .order_services, .order_info{
+        grid-column: span 3;
+    }
+    .main_card_value{
+        font-size: 26px;
+        line-height: 30px;
+    }
+    .main_card_text{
+        font-size: 22px;
+    }
+    .main_card_img{
+        width: 80px;
+        height: 80px !important;
+    }
+    .main_card{
+        height: 250px;
+    }
+    .main_card_weather{
+        padding: 15px 20px;
+    }
+    .weather_card_days img{
+        margin: 12px 0;
+    }
+    .weather_card_weeks{
+        height: 220px;
+    }
+    .weather_card_week{
+        margin-top: 15px;
+        padding-right: 10px;
+    }
+    .weather_card_days{
+        margin-bottom: 15px;
+        padding: 10px 12px;
+    }
+    .weather_card_title{
+        font-size: 32px;
+        padding-right: 15px;
+    }
+    .nav_details_text, .weather_card_date{
+        font-size: 20px;
+    }
+}
+@media (max-width: 992px) {
+    .order_info{
+        grid-column: span 6;
+    }
+    .main_cards{
+        grid-gap: 25px;
+    }
+    .main_card_value{
+        font-size: 22px;
+        line-height: 30px;
+    }
+    .main_card_text{
+        font-size: 20px;
+    }
+    .main_card_img{
+        width: 60px;
+        height: 60px !important;
+        margin: 0;
+    }
+    .main_card{
+        height: 220px;
+    }
+    .nav_details{
+        padding: 15px;
+    }
+    .title{
+        font-size: 32px;
+        padding-right: 15px;
+    }
+    .weather_week_day, .weather_week_indi{
+        font-size: 16px;
+    }
+    .weather_card_days img, .card_footer_title{
+        margin: 0;
+    }
+    .weather_card_days{
+        padding: 6px 8px;
+    }
+    .main_card_header{
+        padding-bottom: 15px;
+    }
+    .weather_card_title{
+        font-size: 28px;    
+    }
+    .nav_details_text, .weather_card_date{
+        font-size: 16px;
+    }
+}
+@media (max-width: 768px) {
+    .main_card_weather{
+        grid-column: span 6 !important;
+    }
+    .main_card{
+        grid-column: span 4;
+    }
+    .main_card:nth-child(1), .main_card:nth-child(2){
+        grid-column: span 5;
+    }
+    .nav .container{
+        flex-direction: column;
+        margin: 10px auto 20px;
+    }
+    .order_car, .order_services, .order_info{
+        grid-column: span 6;
+    }
+    .fieldset{
+        display: flex;
+        justify-content: center;
+        margin: 0 auto;
+    }
+}
+@media (max-width: 640px) {
+    aside{
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        border-radius: 20px;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        display: block !important;
+        height: 80px !important;
+        z-index: 999;
+        overflow-y: hidden !important;
+        transition: all .3s;
+        padding: 15px 0 !important;
+    }
+    aside.active{
+        height: max-content !important;
+        overflow-y: auto !important;
+    }
+    .menu_btn i{
+        transition: all .3s;
+    }
+    aside.active .menu_btn i{
+        transform: rotate(90deg);
+    }
+    .main_card_weather{
+        padding: 10px 15px;
+    }
+    .menu_btn{
+        display: block;
+    }
+    .order_form{
+        padding: 30px 20px;
+    }
+}
+@media (max-width: 440px) {
+    .main_card_weatherm, .main_card{
+        grid-column: span 10 !important;
+    }
+    .nav_content {
+        padding-right: 15px;
+    }
+    .order_form{
+        padding: 20px 10px;
+    }
+    .order_title{
+        font-size: 30px;
+    }
+    .select, .order_input{
+        font-size: 18px;
+        height: 50px;
+        margin-bottom: 20px;
+        padding: 10px 15px;
+    }
+    .select::before{
+        width: 8px;
+        height: 8px;
+        right: 15px;
+    }
+}
