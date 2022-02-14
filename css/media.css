@@ -97,6 +97,10 @@
         line-height: 50px;
         
     }
+    .table td{
+        font-size: 32px !important;
+        line-height: 40px !important;
+    }
 }
 @media (max-width: 1100px) {
     .order_car, .order_services, .order_info{
@@ -145,6 +149,12 @@
     }
     .card-menu-card{
         min-height: 325px;
+    }
+    .table td{
+        font-size: 30px !important;
+    }
+    #dataTable td:nth-child(2) img{
+        max-width: 150px;
     }
 }
 @media (max-width: 992px) {
@@ -200,6 +210,9 @@
     .tooltiptext{
         display: none;
     }
+    .table td{
+        font-size: 28px !important;
+    }
 }
 @media (max-width: 768px) {
     .main_card_weather{
@@ -225,6 +238,12 @@
     }
     .card-menu{
         grid-template-columns: 1fr 1fr;
+    }
+    .table td{
+        font-size: 26px !important;
+    }
+    .table{
+        min-width: 800px;
     }
 }
 @media (max-width: 640px) {
@@ -262,6 +281,12 @@
     }
     .order_form{
         padding: 30px 20px;
+    }
+    .table td{
+        font-size: 24px !important;
+    }
+    #dataTable td:nth-child(2) img{
+        max-width: 120px;
     }
 }
 @media (max-width: 440px) {
@@ -314,5 +339,14 @@
     }
     .card-menu-card{
         min-width: 300px;
+    }
+    .table{
+        min-width: 700px;
+    }
+    .table td:nth-child(7){
+        padding-right: 10px;
+    }
+    .table td:nth-child(1){
+        padding-left: 10px;
     }
 }
