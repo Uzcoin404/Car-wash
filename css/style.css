@@ -631,172 +631,149 @@ nav .container{
     border-radius: 10px;
 }
   /* Add a thumb */
-  .table-bordered::-webkit-scrollbar-thumb {
+.table-bordered::-webkit-scrollbar-thumb {
     border-radius: 10px;
     background: #94B8FF;
-  }
-#dataTable{
-    width: 1630px;
-    height: 120px;
-background: #FFFFFF;
-box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.06);
-border-radius: 20px;
-margin-bottom: 30px;
 }
-#dataTable tbody tr td:nth-child(1){
+tr{
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.06);
+}
+.card-body tr{
+    background: transparent;
+}
+tr:last-child{
+    margin-bottom: 0;
+}
+#dataTable{ 
+    max-width: 1600px;
+    /* min-width: 1200px; */
+    overflow: auto;
+    border-collapse:separate; 
+    border-spacing: 0 30px;
+}
+tbody{
+    min-width: 1200px;
+    overflow: auto;
+}
+#dataTable tbody tr td{
     font-family: 'Poppins';
-font-style: normal;
-font-weight: 500;
-font-size: 40px;
-line-height: 60px;
-text-align: center;
-color: #FFB803;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 60px;
+    text-align: center;
+    color: #FFB803;
 }
 #dataTable tbody tr td:nth-child(2){
-    width: 186px;
+    max-width: 186px;
     height: 80px;
 }
 #dataTable tbody tr td:nth-child(3){
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 40px;
-    line-height: 60px;
-    text-align: center;
     color: #898989;
 }
 #dataTable tbody tr td:nth-child(4){
-    width: 110px;
+    max-width: 110px;
     height: 44px;
 }
-#dataTable tbody tr td:nth-child(5){
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 40px;
-    line-height: 60px;
-    text-align: center;
-    color: #898989;
-}
-#dataTable tbody tr td:nth-child(6){
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 40px;
-    line-height: 60px;
-    text-align: center;
+#dataTable tbody tr td:nth-child(5), #dataTable tbody tr td:nth-child(6){
     color: #898989;
 }
 #dataTable tbody tr td:nth-child(7){
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 500;
-font-size: 40px;
-line-height: 60px;
-text-align: center;
-color: #333333;
+    color: #333333;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
 }
-/* #dataTable tbody tr td hr{
-    border: 2px solid #c7d3c5;
-    transform: rotate(90deg);
-    width: 50px;
-    height: 4px;
-    display: flex;
-    align-items: center;
-    text-align: center;
-} */
+#dataTable tbody tr td:nth-child(1){
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    padding-left: 15px;
+}
 /************************************************ Navbat html end ******************************************/
 /************************************************ Yuvilmoqda ******************************************/
 .card-menu{
+    width: 100%;
     display: grid;
-    grid-template-columns: 20% 20% 20% 20% 20%;
-    grid-column-gap: 30px;
-    grid-row-gap: 30px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 30px;
 }
 .card-menu-card{
-    width: 300px;
-    height: 350px;
+    max-width: 300px;
     background: #FFB803;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.06);
     border-radius: 20px;
+    padding: 15px 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
 }
 .yolak{
-    padding-top: 20px;
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 36px;
+}
+.yolak_img{
+    max-width: 244px;
+    height: auto;
+    margin: 25px 0 20px;
+}
+.yolak-user{
+    font-weight: 500;
     font-size: 24px;
     line-height: 36px;
     text-align: center;
-    color: #FFFFFF;
-}
-.yolak_img{
-    padding-top: 25px;
-    padding-left: 35px;
-    width: 244px;
-    height: 104px;
-}
-.yolak-user{
-    padding-top: 20px;
+    padding: 0 8px;
     padding-bottom: 24px;
-    font-family:'Poppins';
-font-style: normal;
-font-weight: 500;
-font-size: 24px;
-line-height: 36px;
-text-align: center;
-color: #FFFFFF;
 }
 .yolak-sms{
-    border: 1px solid #FFFFFF;
-box-sizing: border-box;
-border-radius: 5px;
-margin-left: 25%;
+    border: 1px solid #fff;
+    box-sizing: border-box;
+    border-radius: 5px;
+    transition: all .3s;
 }
 .yolak-sms:hover{
-background-color: #FFFFFF;
+    background-color: #fff;
+    color: #000;
 }
-.yolak-tayyor:hover{
-background: none;
+.button_class{
+    display: flex;
+    flex-direction: column;
 }
 .yolak-tayyor{
     margin-top: 10px;
-    border: 1px solid #FFFFFF;
-box-sizing: border-box;
-border-radius: 5px;
-margin-left: 25%;
-background: #FFFFFF;
+    border: 1px solid #fff;
+    background: #fff;
+    border-radius: 5px;
+    text-align: center;
+    transition: all .3s;
 }
 .yolak-sms a{
     padding: 4px 17px 5px 18px;
-    font-family: 'Poppins';
-    font-style: normal;
+    display: inline-block;
     font-weight: normal;
     font-size: 14px;
     line-height: 21px;
     text-align: center;
     color: #FFFFFF;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 .yolak-tayyor a{
     padding: 4px 41px 5px 40px;
-    font-family: 'Poppins';
-    font-style: normal;
+    display: inline-block;
     font-weight: normal;
     font-size: 14px;
     line-height: 21px;
     text-align: center;
     color: #333333;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 .yolak-sms a:hover{
     color: #333333;
 }
-.yolak-tayyor a:hover{
+.yolak-tayyor:hover{
+    background: transparent;
     color: #fff;
 }
 .fa-user{
@@ -805,14 +782,15 @@ background: #FFFFFF;
 .fa-thumbs-up{
     padding-right: 7px;
 }
-.fa-sms{
+#comment_icon{
     padding-right: 7px;
 }
 .carding{
     background: #94B8FF;
+    justify-content: space-between;
 }
-.button_cla{
-    padding-top: 65%;
+.carding img{
+    opacity: 0;
 }
 /************************************************ Yuvilmoqda end ******************************************/
 

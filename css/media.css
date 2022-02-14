@@ -21,6 +21,9 @@
     .order_form {
         padding: 40px 30px;
     }
+    .card-menu{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
 }
 @media (max-width: 1400px) {
     .order_switch label, .order_input::placeholder{
@@ -53,12 +56,6 @@
         display: flex;
         justify-content: center;
         margin: 0 auto;
-    }
-    .card-menu{
-        display: grid;
-        grid-template-columns: 20% 20% 20% 20% 20%;
-        grid-column-gap: 110px;
-        grid-row-gap: 30px;
     }
     .container{
         max-width: 1250px;
@@ -144,10 +141,10 @@
         font-size: 20px;
     }
     .card-menu{
-        display: grid;
-        grid-template-columns: 25% 25% 25% 25%;
-        grid-column-gap: 150px;
-        grid-row-gap: 30px;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .card-menu-card{
+        min-height: 325px;
     }
 }
 @media (max-width: 992px) {
@@ -203,12 +200,6 @@
     .tooltiptext{
         display: none;
     }
-    .card-menu{
-        display: grid;
-        grid-template-columns: 25% 25% 25% 25%;
-        grid-column-gap: 190px;
-        grid-row-gap: 30px;
-    }
 }
 @media (max-width: 768px) {
     .main_card_weather{
@@ -233,10 +224,7 @@
         margin: 0 auto;
     }
     .card-menu{
-        display: grid;
-        grid-template-columns: 25% 25% 25% 25%;
-        grid-column-gap: 200px;
-        grid-row-gap: 30px;
+        grid-template-columns: 1fr 1fr;
     }
 }
 @media (max-width: 640px) {
@@ -254,10 +242,7 @@
         padding: 15px 0 !important;
     }
     .card-menu{
-        display: grid;
-        grid-template-columns: 25% 25% 25% 25%;
-        grid-column-gap: 230px;
-        grid-row-gap: 30px;
+        grid-template-columns: 1fr 1fr;
     }
     aside.active{
         height: max-content !important;
@@ -324,9 +309,10 @@
         flex-wrap: wrap;
     }
     .card-menu{
-        display: grid;
-        grid-template-columns: 50% 50%;
-        grid-column-gap: 170px;
-        grid-row-gap: 30px;
+        grid-template-columns: 1fr;
+        place-items: center;
+    }
+    .card-menu-card{
+        min-width: 300px;
     }
 }
