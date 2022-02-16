@@ -49,105 +49,225 @@
                     <div class="card-body">
                         <div class="card-headerr">
                             <h6 class="text-primaryy">Ishchilar: 4 ta</h6>
-                            <button class="text-primar"><a href=""><i class="fas fa-bell-plus"></i>Ishchi qo'shish</a></button>
+                            <button class="text-primar settings_btn"><a href=""><i class="fas fa-plus-circle" id="plus_icon"></i>Ishchi qo'shish</a></button>
                         </div>
                         <div class="table-responsive">
                             <table class="tabl" id="userTable" width="100%" cellspacing="0">
-                                        <thead>
-                                            <tr>
-                                                <th></th>
-                                                <th>Ism</th>
-                                                <th>Foiz</th>
-                                                <th>Bugunlik ish haqi</th>
-                                                <th>O'zgartrish</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td><a href="#"><i class="fas fa-user"></i></a></td>
-                                                <td><a href="#">Khan Solo</a></td>
-                                                <td><a href="#">50%</a></td>
-                                                <td><a href="#">50 000 UZS</a></td>
-                                                <td class="table_btn pay_btn"><a href=""><i class="fas fa-badge-dollar"></i></a><a href=""><i class="fas fa-pen"></i></a><a href=""><i class="fas fa-trash"></i></a></td>
-                                                
-                                                <!-- <div class="chiziq"></div> -->
-                                            </tr>
-                                        </tbody>
-                                        <tbody>
-                                            <tr>
-                                                <td><a href="#"><i class="fas fa-user"></i></a></td>
-                                                <td><a href="#">Harison Ford</a></td>
-                                                <td><a href="#">50%</a></td>
-                                                <td><a href="#">50 000 UZS</a></td>
-                                                <td class="table_btn pay_btn"><a href=""><i class="fas fa-badge-dollar"></i></a><a href=""><i class="fas fa-pen"></i></a><a href=""><i class="fas fa-trash"></i></a></td>
-                                                
-                                            </tr>
-                                        </tbody>
-                                        <tbody>
-                                            <tr>
-                                                <td><a href="#"><i class="fas fa-user"></i></a></td>
-                                                <td><a href="#">Useyn Bolt</a></td>
-                                                <td><a href="#">50%</a></td>
-                                                <td><a href="#">50 000 UZS</a></td>
-                                                <td class="table_btn pay_btn"><a href=""><i class="fas fa-badge-dollar"></i></a><a href=""><i class="fas fa-pen"></i></a><a href=""><i class="fas fa-trash"></i></a></td>
-                                               
-                                            </tr>
-                                        </tbody>
-                                    </table>
+                                <thead>
+                                    <tr>
+                                        <th></th>
+                                        <th>Ism</th>
+                                        <th>Foiz</th>
+                                        <th>Bugunlik ish haqi</th>
+                                        <th>O'zgartrish</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><a href="#"><i class="fas fa-user"></i></a></td>
+                                        <td><a href="#">Khan Solo</a></td>
+                                        <td><a href="#">50%</a></td>
+                                        <td><a href="#">50 000 UZS</a></td>
+                                        <td class="table_btn pay_btn"><a href="#"><i class="fas fa-badge-dollar"></i></a><a href="#"><i class="fas fa-pen"></i></a><a href="#"><i onclick="trashsh()" class="fas fa-trash"></i></a></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="#"><i class="fas fa-user"></i></a></td>
+                                        <td><a href="#">Harison Ford</a></td>
+                                        <td><a href="#">50%</a></td>
+                                        <td><a href="#">50 000 UZS</a></td>
+                                        <td class="table_btn pay_btn"><a href="#"><i class="fas fa-badge-dollar"></i></a><a href="#"><i class="fas fa-pen"></i></a><a href="#"><i onclick="trashsh()" class="fas fa-trash"></i></a></td>
+                                        
+                                    </tr>
+                                    <tr>
+                                        <td><a href="#"><i class="fas fa-user"></i></a></td>
+                                        <td><a href="#">Useyn Bolt</a></td>
+                                        <td><a href="#">50%</a></td>
+                                        <td><a href="#">50 000 UZS</a></td>
+                                        <td class="table_btn pay_btn"><a href="#"><i class="fas fa-badge-dollar"></i></a><a href="#"><i class="fas fa-pen"></i></a><a href="#"><i onclick="trashsh()" class="fas fa-trash"></i></a></td>
+                                        
+                                    </tr>
+                                    <tr>
+                                        <td><a href="#"><i class="fas fa-user"></i></a></td>
+                                        <td><a href="#">Useyn Bolt</a></td>
+                                        <td><a href="#">50%</a></td>
+                                        <td><a href="#">50 000 UZS</a></td>
+                                        <td class="table_btn pay_btn"><a href="#"><i class="fas fa-badge-dollar"></i></a><a href="#"><i class="fas fa-pen"></i></a><a href="#"><i onclick="trashsh()" class="fas fa-trash"></i></a></td>
+                                        
+                                    </tr>
+                                    <tr>
+                                        <td><a href="#"><i class="fas fa-user"></i></a></td>
+                                        <td><a href="#">Useyn Bolt</a></td>
+                                        <td><a href="#">50%</a></td>
+                                        <td><a href="#">50 000 UZS</a></td>
+                                        <td class="table_btn pay_btn"><a href="#"><i class="fas fa-badge-dollar"></i></a><a href="#"><i class="fas fa-pen"></i></a><a href="#"><i onclick="trashsh()" class="fas fa-trash"></i></a></td>
+                                        
+                                    </tr>
+                                    <tr>
+                                        <td><a href="#"><i class="fas fa-user"></i></a></td>
+                                        <td><a href="#">Useyn Bolt</a></td>
+                                        <td><a href="#">50%</a></td>
+                                        <td><a href="#">50 000 UZS</a></td>
+                                        <td class="table_btn pay_btn"><a href="#"><i class="fas fa-badge-dollar"></i></a><a href="#"><i class="fas fa-pen"></i></a><a href="#"><i onclick="trashsh()" class="fas fa-trash"></i></a></td>
+                                        
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="xizmatlarsettnigis">
+                        <div class="yuvish-yolagi">
+                            <h3 class="yuvish-title">Yuvish yo`laklari</h3>
+                            <button class="text-primar yuvish-primn"><a href=""><i class="fas fa-plus-circle" id="plus_icon"></i></i>Yo'lak qo'shish</a></button>
+                            <div class="yuvish-cards">
+                                <div class="yuvidh-card">
+                                    <div class="wash_card_content">
+                                        <a class="yuvish-link" href="#"><i class="far fa-garage-car"></i></a>
+                                        <h1 class="yuvish_yol">1-yuvish yo'lagi</h1>
+                                    </div>
+                                    <a class="yuvish-link" href="#"><i onclick="trashsh()" class="fas fa-trash"></i></a>
+                                </div>
+                                <div class="yuvidh-card">
+                                    <div class="wash_card_content">
+                                        <a class="yuvish-link" href="#"><i class="far fa-garage-car"></i></a>
+                                        <h1 class="yuvish_yol">2-yuvish yo'lagi</h1>
+                                    </div>
+                                    <a class="yuvish-link" href="#"><i onclick="trashsh()" class="fas fa-trash"></i></a>
+                                </div>
+                                <div class="yuvidh-card">
+                                    <div class="wash_card_content">
+                                        <a class="yuvish-link" href="#"><i class="far fa-garage-car"></i></a>
+                                        <h1 class="yuvish_yol">3-yuvish yo'lagi</h1>
+                                    </div>
+                                    <a class="yuvish-link" href="#"><i onclick="trashsh()" class="fas fa-trash"></i></a>
+                                </div>
+                                <div class="yuvidh-card">
+                                    <div class="wash_card_content">
+                                        <a class="yuvish-link" href="#"><i class="far fa-garage-car"></i></a>
+                                        <h1 class="yuvish_yol">4-yuvish yo'lagi</h1>
+                                    </div>
+                                    <a class="yuvish-link" href="#"><i onclick="trashsh()" class="fas fa-trash"></i></a>
+                                </div>
+                                <div class="yuvidh-card">
+                                    <div class="wash_card_content">
+                                        <a class="yuvish-link" href="#"><i class="far fa-garage-car"></i></a>
+                                        <h1 class="yuvish_yol">4-yuvish yo'lagi</h1>
+                                    </div>
+                                    <a class="yuvish-link" href="#"><i onclick="trashsh()" class="fas fa-trash"></i></a>
                                 </div>
                             </div>
-                    <div class="xizmatlarsettnigis">
-                     <div class="yuvish-yolagi">
-                         <h3 class="yuvish-title">Yuvish yo`laklari</h3>
-                         <button class="text-primar yuvish-primn"><a href=""><i class="fas fa-bell-plus"></i>Yo'lak qo'shish</a></button>
-                         <div class="yuvish-cards">
-                             <div class="yuvidh-card">
-                                <a class="yuvish-link" href="#"><i class="fas fa-house"></i></a>
-                                <h1 class="yuvish_yol">1-yuvish yo'lagi</h1>
-                                <a class="yuvish-link" href="#"><i class="fas fa-trash"></i></a>
-                             </div>
-                             <div class="chiziq2"></div>
-                             <div class="yuvidh-card">
-                                <a class="yuvish-link" href="#"><i class="fas fa-house"></i></a>
-                                <h1 class="yuvish_yol">1-yuvish yo'lagi</h1>
-                                <a class="yuvish-link" href="#"><i class="fas fa-trash"></i></a>
-                             </div>
-                             <div class="chiziq2"></div>
-                             <div class="yuvidh-card">
-                                <a class="yuvish-link" href="#"><i class="fas fa-house"></i></a>
-                                <h1 class="yuvish_yol">1-yuvish yo'lagi</h1>
-                                <a class="yuvish-link" href="#"><i class="fas fa-trash"></i></a>
-                             </div>
-                             <div class="chiziq2"></div>
-                             <div class="yuvidh-card">
-                                <a class="yuvish-link" href="#"><i class="fas fa-house"></i></a>
-                                <h1 class="yuvish_yol">1-yuvish yo'lagi</h1>
-                                <a class="yuvish-link" href="#"><i class="fas fa-trash"></i></a>
-                             </div>
-                             <div class="chiziq2"></div>
-                         </div>
-                     </div>    
-                    </div>           
-                      <!-- <div class="xizmatlar">
-                         <h3 class="xizmat-title">Xizmatlar</h3>
-                         <button class="text-primar xizmat-primn"><a href=""><i class="fas fa-bell-plus"></i>Xizmatlar qo'shish</a></button>
-                         <div class="xizmat-cards">
-                             <div class="xizmat-card">
-                                <a class="xizmat-link" href="#"><i class="fas fa-house"></i></a>
-                                <h1 class="xizmat_yol">1-yuvish yo'lagi</h1>
-                                <a class="xizmat-link" href="#"><i class="fas fa-trash"></i></a>
-                             </div>
-                             
-                         </div>
-                     </div>  -->
-                     
-                    </div>   
+                        </div>       
+                        <div class="xizmatlar">
+                            <h3 class="xizmat-title">Xizmatlar</h3>
+                            <button class="text-primar xizmat-primn yuvish-primn"><a href=""><i class="fas fa-plus-circle" id="plus_icon"></i></i>Xizmat qo'shish</a></button>
+                            <div class="xizmat-cards">
+                                <div class="xizmat-card">
+                                    <div class="wash_card_content">
+                                        <a class="xizmat-link" href="#"><i class="fas fa-calculator-alt"></i></a>
+                                        <h1 class="xizmat_yol">Shampun</h1>
+                                    </div>
+                                    <a class="xizmat-link" href="#"><i onclick="trashsh()" class="fas fa-trash"></i></a>
+                                </div>
+                                <div class="xizmat-card">
+                                    <div class="wash_card_content">
+                                        <a class="xizmat-link" href="#"><i class="fas fa-calculator-alt"></i></a>
+                                        <h1 class="xizmat_yol">Xushbo'ylik</h1>
+                                    </div>
+                                    <a class="xizmat-link" href="#"><i onclick="trashsh()" class="fas fa-trash"></i></a>
+                                </div>
+                                <div class="xizmat-card">
+                                    <div class="wash_card_content">
+                                        <a class="xizmat-link" href="#"><i class="fas fa-calculator-alt"></i></a>
+                                        <h1 class="xizmat_yol">Changyutgich</h1>
+                                    </div>
+                                    <a class="xizmat-link" href="#"><i onclick="trashsh()" class="fas fa-trash"></i></a>
+                                </div>
+                                <div class="xizmat-card">
+                                    <div class="wash_card_content">
+                                        <a class="xizmat-link" href="#"><i class="fas fa-calculator-alt"></i></a>
+                                        <h1 class="xizmat_yol">Balon Qoraytrish</h1>
+                                    </div>
+                                    <a class="xizmat-link" href="#"><i onclick="trashsh()" class="fas fa-trash"></i></a>
+                                </div>
+                                <div class="xizmat-card">
+                                    <div class="wash_card_content">
+                                        <a class="xizmat-link" href="#"><i class="fas fa-calculator-alt"></i></a>
+                                        <h1 class="xizmat_yol">Balon Qoraytrish</h1>
+                                    </div>
+                                    <a class="xizmat-link" href="#"><i onclick="trashsh()" class="fas fa-trash"></i></a>
+                                </div>
+                            </div>
+                        </div> 
+                        <div class="yuvish-yolagi">
+                            <h3 class="yuvish-title">Tariflar</h3>
+                            <button class="text-primar yuvish-primn"><a href=""><i class="fas fa-plus-circle" id="plus_icon"></i></i>Tariflar qo'shish</a></button>
+                            <div class="yuvish-cards">
+                                <div class="yuvidh-card">
+                                    <div class="wash_card_content">
+                                        <a class="yuvish-link" href="#"><i class="fal fa-analytics"></i></a>
+                                        <h1 class="yuvish_yol">To'lq</h1>
+                                    </div>
+                                    <a class="yuvish-link" href="#"><i onclick="trashsh()" class="fas fa-trash"></i></a>
+                                </div>
+                                <div class="yuvidh-card">
+                                    <div class="wash_card_content">
+                                        <a class="yuvish-link" href="#"><i class="fal fa-analytics"></i></a>
+                                        <h1 class="yuvish_yol">Oddiy</h1>
+                                    </div>
+                                    <a class="yuvish-link" href="#"><i onclick="trashsh()" class="fas fa-trash"></i></a>
+                                </div>
+                                <div class="yuvidh-card">
+                                    <div class="wash_card_content">
+                                        <a class="yuvish-link" href="#"><i class="fal fa-analytics"></i></a>
+                                        <h1 class="yuvish_yol">Suv urish</h1>
+                                    </div>
+                                    <a class="yuvish-link" href="#"><i onclick="trashsh()" class="fas fa-trash"></i></a>
+                                </div>
+                                <div class="yuvidh-card">
+                                    <div class="wash_card_content">
+                                        <a class="yuvish-link" href="#"><i class="fal fa-analytics"></i></a>
+                                        <h1 class="yuvish_yol">Balon qoraytrish</h1>
+                                    </div>
+                                    <a class="yuvish-link" href="#"><i onclick="trashsh()" class="fas fa-trash"></i></a>
+                                </div>
+                                <div class="yuvidh-card">
+                                    <div class="wash_card_content">
+                                        <a class="yuvish-link" href="#"><i class="fal fa-analytics"></i></a>
+                                        <h1 class="yuvish_yol">Balon qoraytrish</h1>
+                                    </div>
+                                    <a class="yuvish-link" href="#"><i onclick="trashsh()" class="fas fa-trash"></i></a>
+                                </div>
+                            </div>
+                        </div> 
+                    </div>  
                 </div>
             </div>
         </main>
     </div>
 
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="../js/script.js"></script>
+    <script>
+        let name = $(".fa-trash");
+        function trashsh(){
+            swal({
+                title: "Are you sure?",
+                text: "Once deleted, you will not be able to recover this imaginary file!",
+                icon: "warning",
+                buttons: true,
+                dangerMode: true,
+            })
+            .then((name) => {
+            if (name) {
+                swal("Poof! Your imaginary file has been deleted!", {
+                icon: "success",
+                });
+            } else {
+                swal("Your imaginary file is safe!");
+            }
+            });
+        }
+    </script>
 
 </body>
 </html>

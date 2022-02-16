@@ -24,6 +24,13 @@
     .card-menu{
         grid-template-columns: 1fr 1fr 1fr 1fr;
     }
+    .xizmatlarsettnigis{
+        grid-gap: 30px;
+    }
+    .yuvish-primn{
+        margin: 0 auto;
+        margin-bottom: 40px;
+    }
 }
 @media (max-width: 1400px) {
     .order_switch label, .order_input::placeholder{
@@ -101,6 +108,13 @@
         font-size: 32px !important;
         line-height: 40px !important;
     }
+    .text-primaryy, .yuvish-title, .xizmat-title{
+        font-size: 36px;
+    }
+    .text-primar a, .xizmat-primn a, .yuvish-link, .yuvish_yol, .xizmat-link, .xizmat_yol, .tabl td, .tabl th{
+        font-size: 24px !important;
+    }
+    
 }
 @media (max-width: 1100px) {
     .order_car, .order_services, .order_info{
@@ -155,6 +169,13 @@
     }
     #dataTable td:nth-child(2) img{
         max-width: 150px;
+    }
+    .xizmatlarsettnigis{
+        grid-template-columns: 1fr 1fr;  
+    }
+    .yuvish-primn{
+        margin: 0 auto;
+        margin-bottom: 40px;
     }
 }
 @media (max-width: 992px) {
@@ -213,6 +234,9 @@
     .table td{
         font-size: 28px !important;
     }
+    .card-body{
+        padding: 30px 20px;
+    }
 }
 @media (max-width: 768px) {
     .main_card_weather{
@@ -244,6 +268,15 @@
     }
     .table{
         min-width: 800px;
+    }
+    .xizmatlarsettnigis{
+        grid-template-columns: 1fr;  
+    }
+    .text-primaryy, .yuvish-title, .xizmat-title{
+        font-size: 32px;
+    }
+    .settings_btn{
+        margin: 0;
     }
 }
 @media (max-width: 640px) {
@@ -288,8 +321,16 @@
     #dataTable td:nth-child(2) img{
         max-width: 120px;
     }
+    .card-headerr{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 }
 @media (max-width: 440px) {
+    .tabl{
+        min-width: 600px;
+    }
     .aside_link {
         margin-bottom: 20px;
     }

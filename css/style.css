@@ -412,6 +412,7 @@ nav .container{
     overflow: hidden;
     display: none;
     z-index: 99;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 .options.active{
     display: block;
@@ -556,7 +557,7 @@ nav .container{
 .wash_type_blog{
     display: flex;
     align-items: center;
-    padding: 15px 0 0px;
+    padding: 15px 0 5px;
 }
 .wash_type, .descr{
     font-weight: 300;
@@ -567,7 +568,7 @@ nav .container{
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-    padding-top: 5px;
+    padding: 10px 0;
 }
 .service_type_text{
     padding-left: 0;
@@ -601,7 +602,7 @@ nav .container{
 .wash_cost{
     padding-left: 0;
     text-align: center;
-    padding-bottom: 5px;
+    padding-bottom: 10px;
 }
 .btn{
     max-width: 320px;
@@ -630,7 +631,7 @@ nav .container{
     height: 10px;
     border: 1px solid #FFFFFF80;
 }
-tr{
+.table-qator tr{
     background: #fff;
     border-radius: 20px;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.06);
@@ -803,179 +804,170 @@ tbody{
 .carding img{
     opacity: 0;
 }
-/************************************************ Yuvilmoqda end ******************************************/
-
 
 /************************************************ Sozlamalar ******************************************/
 
 .card-body{
     background: #94B8FF;
     border-radius: 30px;
-    width: 1620px;
-    height: 496px;
-}.card-headerr{
+    padding: 35px 20px 30px 70px;
+}
+.xizmatlarsettnigis{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 45px;
+    margin-top: 45px;
+}
+.table-responsive{
+    overflow-x: auto;
+}
+.table-responsive::-webkit-scrollbar{
+    height: 10px;
+}
+.tabl{
+    min-width: 650px;
+    overflow-x: auto;
+}
+.card-headerr{
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 .text-primaryy{
-    font-family: 'Poppins';
-font-style: normal;
-font-weight: 600;
-font-size: 42px;
-line-height: 63px;
-color: #FFFFFF;
-margin-top: 38px;
-margin-left: 70px;
+    font-weight: 600;
+    font-size: 42px;
+    line-height: 63px;
+    color: #FFFFFF;
 }
 .text-primar{
     background: #FFFFFF;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.06);
     border-radius: 10px;
-    padding: 7px 21px 6px 60px;
-    margin-top: 38px;
-    margin-right: 70px;
+    padding: 6px 20px;
+    margin-right: 40px;
 }
 .text-primar a{
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: normal;
     font-size: 30px;
     line-height: 45px;
     text-align: center;
     color: #94B8FF;
 }
-.fa-bell-plus{
+#plus_icon{
     padding-right: 11px;
 }
+
 thead tr th{
-    font-family: 'Poppins';
-    font-style: normal;
     font-weight: 500;
     font-size: 30px;
     line-height: 45px;
     color: #FFFFFF;
     padding-top: 40px;
+    padding-bottom: 12px;
+    text-align: center;
+    border-bottom: 1px solid #FFFFFF
 }
 #userTable tbody tr td{
-    font-family: 'Poppins';
-    font-style: normal;
     font-weight: 500;
     font-size: 30px;
     line-height: 45px;
     color: #FFFFFF;
+    text-align: center;
+    border-bottom: 1px solid #FFFFFF;
+    padding: 12px 0 10px;
 }
 #userTable tbody tr td a{
     color: #FFFFFF;
 }
-.tablet{
-    height: 400px;
+.settings_table{
     overflow-y: auto;
 }
-.tablet::-webkit-scrollbar{
-    width: 10px;
-    border: 1px solid #FFFFFF80;
-    background: #fff;
-    border-radius: 10px;    
+.table-responsive tbody{
+    max-height: 300px;
+    overflow-y: auto;
 }
-.tablet::-webkit-scrollbar-thumb{
-    background: #94B8FF;
+.tabl tr td:nth-child(2), .tabl tr th:nth-child(2){
+    text-align: left !important;
+}
+.tabl tr td:last-child, .tabl tr th:last-child{
+    text-align: right !important;
+    padding-right: 24px !important;
+}
+
+.fa-badge-dollar, .fa-pen{
+    padding-right: 20px;
+}
+.table-responsive::-webkit-scrollbar{
+    width: 6px;
+    border: 1px solid #FFFFFF80;
+    background: transparent;
+    border-radius: 10px;   
+}
+.table-responsive::-webkit-scrollbar-thumb{
+    background: #fff;
     border-radius: 10px;
 }
-.fa-badge-dollar{
-    padding-right: 20px;
-}
-.fa-pen{
-    padding-right: 20px;
-}
-/* .chiziq{
-    opacity: 0.5;
-    position: absolute;
-    width: 1440px;
-    border: 1px solid #FFFFFF;
-} */
-.chiziq2{
-    width: 370px;
-    border: 1px solid #FFFFFF;
-    margin-left: 18%;
-    margin-bottom: 14px;
-}
-
 /* yuvish yo`lagi sozlamalari */
 
-.yuvish-yolagi{
-    margin-right: 45px;
-    margin-top: 48px;
-    width: 510px;
-    height: 600px;
+.yuvish-yolagi, .xizmatlar{
     background: #FFB803;
-box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.05);
-border-radius: 20px;
+    box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.05);
+    border-radius: 20px;
+    padding-bottom: 70px;
 }
-.yuvish-title{
-    font-family: 'Poppins';
-font-style: normal;
-font-weight: 600;
-font-size: 42px;
-line-height: 63px;
-text-align: center;
-color: #FFFFFF;
-padding-bottom: 8px;
-padding-top: 38px;
+.yuvish-title, .xizmat-title{
+    font-weight: 600;
+    font-size: 42px;
+    line-height: 63px;
+    text-align: center;
+    color: #FFFFFF;
+    padding-bottom: 8px;
+    padding-top: 38px;
 }
 .yuvish-primn{
     display: flex;
     justify-content: center;
-    margin-left: 17%;
+    margin: 0 auto;
     margin-bottom: 50px;
 }
-.yuvidh-card{
+.yuvidh-card, .xizmat-card{
     display: flex;
-    justify-content: space-around;
-    margin-bottom: 9px;
+    justify-content: space-between;
+    margin: 0 15px;
+    padding: 14px 20px 10px;
+    border-bottom: 1px solid #FFFFFF;
 }
-.yuvish-link{
-    width: 70px;
-    height: 70px;  
+.wash_card_content{
+    display: flex;
+    align-items: center;
+}
+.yuvish-link, .xizmat-link{
     font-size: 32px;
     color: #fff;
 }
-.yuvish_yol{
-    font-family: 'Poppins';
-font-style: normal;
-font-weight: 500;
-font-size: 30px;
-line-height: 45px;
-color: #FFFFFF;
+.yuvish_yol, .xizmat_yol{
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 45px;
+    color: #FFFFFF;
+    padding-left: 25px;
 }
-.yuvish-cards{
+.yuvish-cards, .xizmat-cards{
     height: 300px;
     overflow-y: auto;
 }
-.yuvish-cards::-webkit-scrollbar{
+.yuvish-cards::-webkit-scrollbar, .xizmat-cards::-webkit-scrollbar{
     width: 6px;
     border: 1px solid #FFFFFF80;
     background: transparent;
     border-radius: 10px;
 }
-.yuvish-cards::-webkit-scrollbar-thumb{
+.yuvish-cards::-webkit-scrollbar-thumb, .xizmat-cards::-webkit-scrollbar-thumb{
     background: #fff;
     border-radius: 10px;
 }
-/* yuvish yo`lagi sozlamalari  end*/
 
 /* xizmatlar sozlamalari */
 
 .xizmatlar{
-    position: absolute;
-    margin-top: 48px;
-    margin-left: 45px;
-width: 510px;
-height: 600px;
-left: 775px;
-top: 738px;
-background: #94B8FF;
-box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.05);
-border-radius: 20px;
+    background: #94B8FF;
 }
-/* xizmatlar sozlamalari end */
-/************************************************ Sozlamalar end ******************************************/
