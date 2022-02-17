@@ -502,6 +502,9 @@ nav .container{
 .order_info{
     min-width: 360px;
 }
+.car_img{
+    width: 100%;
+}
 .order_details{
     padding: 20px 30px;
     border: 2px solid #94B8FF;
