@@ -41,7 +41,7 @@ function weatherDetails(result) {
     if (result.cod !== 404) {
         const city = result.name;
         const country = result.sys.country;
-        const temp = result.main.temp;
+        const temp = Math.round(result.main.temp);
         weatherText.innerHTML = `${temp}°`;
         navWeather.setAttribute('title', `Shahar: ${city}, ${country}`);
     } else {

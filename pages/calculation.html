@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car wash | Sozlamalar</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/media.css">
+</head>
+<body>
+    
+    <div class="wrapper">
+        <aside class="aside">
+            <div class="aside_list">
+                <button class="aside_link menu_btn"><i class="fas fa-bars"></i></button>
+                <a href="main.html" class="aside_link"><i class="fas fa-house"></i><span class="tooltiptext">Bosh sahifa</span></a>
+                <a href="order.html" class="aside_link"><i class="fas fa-plus-square"></i><span class="tooltiptext">Buyurtma olish</span></a>
+                <a href="line.html" class="aside_link"><i class="fas fa-car"></i><span class="tooltiptext">Navbat</span></a>
+                <a href="beingwashed.html" class="aside_link"><i class="fas fa-car-wash"></i><span class="tooltiptext">Yuvilmoqda</span></a>
+                <a href="calculation.html" class="aside_link active"><i class="fas fa-usd-square"></i><span class="tooltiptext">Xisob-kitob</span></a>
+            </div>
+            <div class="aside_footer">
+                <a href="settings.html" class="aside_link"><i class="fas fa-cog"></i><span class="tooltiptext">Sozlamalar</span></a>
+            </div>
+        </aside>
+        <main class="main">
+            <nav class="nav">
+                <div class="container">
+                    <h1 class="title">Xisob-kitob</h1>
+                    <div class="nav_details">
+                        <div class="nav_content nav_clock">
+                            <span class="clock_icon"><i class="fas fa-clock"></i></span>
+                            <span class="nav_details_text clock_text">10:21:24</span>
+                        </div>
+                        <div class="nav_content nav_date">
+                            <span class="date_icon"><i class="fas fa-calendar-alt"></i></span>
+                            <span class="nav_details_text date_text">12.01.2022</span>
+                        </div>
+                        <div class="nav_content nav_weather">
+                            <span class="weather_icon"><i class="fas fa-cloud-sun"></i></span>
+                            <span class="nav_details_text weather_text">12°</span>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <div class="content">
+                <div class="container">
+                    <div class="calculation_boxes">
+                        <a href="statistics.html" class="calculation_box">
+                            <img src="../img/money-recive.png" alt="">
+                            <div class="calculation_box_content">
+                                <h3 class="calculation_box_title">Bugungi kirim</h3>
+                                <p class="calculation_box_text bold_600">+10 560 000</p>
+                            </div>
+                        </a>
+                        <a href="statistics.html" class="calculation_box">
+                            <img src="../img/money-send.png" alt="">
+                            <div class="calculation_box_content">
+                                <h3 class="calculation_box_title">Bugungi chiqim</h3>
+                                <p class="calculation_box_text bold_600">-560 000</p>
+                            </div>
+                        </a>
+                        <a href="statistics.html" class="calculation_box">
+                            <img src="../img/statistics.png" alt="">
+                            <div class="calculation_box_content">
+                                <h3 class="calculation_box_title">Statistika</h3>
+                                <p class="calculation_box_text">bo'limi</p>
+                            </div>
+                        </a>
+                        <a href="statistics.html" class="calculation_box">
+                            <img src="../img/receipt-edit.png" alt="">
+                            <div class="calculation_box_content">
+                                <h3 class="calculation_box_title">Chiqim</h3>
+                                <p class="calculation_box_text">qo'shish</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="card-body">
+                        <div class="card-headerr">
+                            <h6 class="text-primaryy">Ishchilar: 4 ta</h6>
+                        </div>
+                        <div class="table-responsive calculation_table">
+                            <table class="tabl" id="userTable" width="100%" cellspacing="0">
+                                <thead>
+                                    <tr>
+                                        <th></th>
+                                        <th>Ism</th>
+                                        <th>Foiz</th>
+                                        <th>Bugunlik ish haqi</th>
+                                        <th>Ish haqini berish</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><a href="#"><i class="fas fa-user"></i></a></td>
+                                        <td><a href="#">Khan Solo</a></td>
+                                        <td><a href="#">50%</a></td>
+                                        <td><a href="#">50 000 UZS</a></td>
+                                        <td class="table_btn pay_btn"><button class="calculation_btn"><img src="../img/money-send-filled.png" alt=""></button></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="#"><i class="fas fa-user"></i></a></td>
+                                        <td><a href="#">Harison Ford</a></td>
+                                        <td><a href="#">50%</a></td>
+                                        <td><a href="#">50 000 UZS</a></td>
+                                        <td class="table_btn pay_btn"><button class="calculation_btn"><img src="../img/money-send-filled.png" alt=""></button></td>
+                                        
+                                    </tr>
+                                    <tr>
+                                        <td><a href="#"><i class="fas fa-user"></i></a></td>
+                                        <td><a href="#">Useyn Bolt</a></td>
+                                        <td><a href="#">50%</a></td>
+                                        <td><a href="#">50 000 UZS</a></td>
+                                        <td class="table_btn pay_btn"><button class="calculation_btn"><img src="../img/money-send-filled.png" alt=""></button></td>
+                                        
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer">
+                    <div class="container">
+                        <p class="footer_text">Copyright © 2020. LogoIpsum. All rights reserved.</p>
+                        <div class="social_media">
+                            <a target="_blank" href="https://facebook.com"><i class="fab fa-facebook-f"></i></a>
+                            <a target="_blank" href="https://instagram.com"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="../js/script.js"></script>
+    <script>
+        let name = $(".fa-trash");
+        function trashsh(){
+            swal({
+                title: "Are you sure?",
+                text: "Once deleted, you will not be able to recover this imaginary file!",
+                icon: "warning",
+                buttons: true,
+                dangerMode: true,
+            })
+            .then((name) => {
+            if (name) {
+                swal("Poof! Your imaginary file has been deleted!", {
+                icon: "success",
+                });
+            } else {
+                swal("Your imaginary file is safe!");
+            }
+            });
+        }
+    </script>
+
+</body>
+</html>

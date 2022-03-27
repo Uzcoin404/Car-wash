@@ -43,9 +43,7 @@ button{
 main{
     width: 100%;
     height: 100vh;
-    overflow-y: auto;
-    padding-bottom: 15px;
-}
+    overflow-y: auto;}
 .container{
     max-width: 1140px;
     margin: 0 auto;
@@ -973,4 +971,95 @@ thead tr th{
 
 .xizmatlar{
     background: #94B8FF;
+}
+
+/*********************************************** Xisob-kitob ******************************************/
+
+.calculation_boxes{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+}
+.calculation_box{
+    display: flex;
+    align-items: center;
+    padding: 24px;
+    background: #94B8FF;
+    color: #fff;
+    border-radius: 12px;
+    margin-bottom: 30px;
+}
+.calculation_box:nth-child(2n+2){
+    background: #FFB803;
+}
+.calculation_box img{
+    width: 70px;
+    height: 70px;
+    margin-right: 15px;
+}
+.calculation_box_title, .calculation_box_text{
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 36px;
+}
+.bold_600{
+    font-weight: 600;
+}
+.calculation_btn{
+    width: 140px;
+    height: 60px;
+    border-radius: 12px;
+    background: #FFB803;
+    vertical-align: center;
+    margin: 0 auto;
+}
+.calculation_table .tabl tr td:last-child, .calculation_table .tabl tr th:last-child{
+    text-align: center !important;
+    padding-right: 0 !important;
+}
+
+/************************************************ Footer ******************************************/
+
+.footer{
+    background: #fff;
+    margin-top: 40px;
+}
+.footer .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 0;
+}
+.footer_text{
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: -0.2;
+    color: #1E2833;
+    opacity: 0.5;
+}
+.social_media a{
+    margin-left: 40px;
+    color: #1E2833;
+}
+
+/************************************************ Statistics ******************************************/
+
+.statistics .container{
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0px 0px 7.409090995788574px 0px #00000033;
+
+}
+.stat_table{
+    width: 100%;
+}
+.statistics_header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #fff;
+}
+.statistics_control{
+    display: flex;
 }
