@@ -1049,17 +1049,178 @@ thead tr th{
     background: #fff;
     border-radius: 12px;
     box-shadow: 0px 0px 7.409090995788574px 0px #00000033;
-
-}
-.stat_table{
-    width: 100%;
+    padding: 0;
+    padding-top: 20px;
 }
 .statistics_header{
     display: flex;
     align-items: center;
     justify-content: space-between;
     background: #fff;
+    padding: 0 30px;
 }
 .statistics_control{
     display: flex;
+}
+.statBtn{
+    padding: 15px 20px;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 30px;
+    border: 1.5px solid #94B8FF;
+    color: #333;
+    border-radius: 8px;
+}
+.filter_btn{
+    margin-right: 30px;
+}
+.statBtn i{
+    font-size: 24px;
+    margin-right: 12px;
+    color: #94B8FF;
+}
+.save_btn{
+    background-color: #94B8FF;
+    color: #fff;
+}
+.save_btn i{
+    color: #fff;
+}
+.stat_search{
+    width: 580px;
+    padding: 15px 0;
+    border: 1.5px solid #94B8FF;
+    border-radius: 9px;
+    position: relative;
+}
+.search_input{
+    position: absolute;
+    left: 70px;
+    width: 85%;
+    color: #333;
+    border: none;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 30px;
+    padding-right: 10px;
+}
+.search_icon{
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 0 20px;
+    font-size: 26px;
+    color: #94B8FF;
+}
+/* stat table */
+
+.stat_table{
+    width: 100%;
+    margin-top: 24px;
+    border-spacing: 0;
+}
+.stat_table thead{
+    background: #94B8FF;
+    color: #fff;
+}
+.stat_table thead tr th{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 26px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+.stat_table tbody tr td{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 31px;
+    color: #333;
+    border-bottom: 1px solid #94B8FF4D;
+}
+.stat_table td, .stat_table th{
+    padding-right: 15px;
+}
+.stat_table thead th:first-child, .stat_table tbody td:first-child{
+    padding-left: 40px;
+}
+.stat_table thead th:last-child, .stat_table tbody td:last-child{
+    padding-right: 40px;
+}
+.stat_table td:last-child, .stat_table th:last-child{
+    text-align: right !important;
+}
+.stat_table_payed{
+    position: relative;
+    background: #94B8FF;
+    padding: 4px 8px 4px 24px;
+    border-radius: 20px;
+    width: max-content;
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 500;
+    color: #fff;
+    cursor: pointer;
+}
+.stat_table_payed::before{
+    content: '';
+    position: absolute;
+    left: 7px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 9px;
+    height: 9px;
+    background-color: #fff;
+    border-radius: 50%;
+}
+
+.stat_pagenetion{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 20px 0;
+    background-color: #94B8FF;
+    color: #fff;
+}
+.pagenetion_pages{
+    display: flex;
+    align-items: center;
+}
+.stat_pagenetion_text{
+    padding-left: 50px;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 1px;
+    color: #fff;
+}
+.pagenetion_pages{
+    padding: 0 25px 0 50px;
+}
+.pagenetion_page{
+    padding-left: 0;
+    padding: 0 15px;    
+}
+.page_control{
+    color: #fff;
+}
+.filter_blog{
+    width: 300px;
+    height: 500px;
+    position: absolute;
+    top: -100%; 
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #fff;
+    transition: .3s;
+    opacity: 0;
+    padding: 20px;
+}
+.filter_blog.active{
+    top: 50%;
+    opacity: 1;
 }

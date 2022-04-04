@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Car wash | Bosh sahifa</title>
+    <title>Car wash | Statistika</title>
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/media.css">
 </head>
@@ -49,10 +49,13 @@
                     <div class="container">
                         <div class="statistics_header">
                             <div class="statistics_control">
-                                <button class="btn filter_btn"><span class="filter_icon"><i class="fas fa-filter"></i></span> Saralash</button>
-                                <input type="search" name="search" placeholder="Ishchi, chiqim nomi bo'yicha qidiruv">
+                                <button class="statBtn filter_btn"><span class="filter_icon"><i class="fas fa-filter"></i></span> Saralash</button>
+                                <div class="stat_search">
+                                    <span class="search_icon"><i class="fas fa-search"></i></span>
+                                    <input class="search_input" type="search" name="search" placeholder="Ishchi, chiqim nomi bo'yicha qidiruv">
+                                </div>
                             </div>
-                            <button class="btn save_btn"><span class="save_icon"><i class="fas fa-save"></i></span> Saqlash(PDF)</button>
+                            <button class="statBtn save_btn"><span class="save_icon"><i class="fas fa-save"></i></span> Saqlash(PDF)</button>
                         </div>
                         <table class="stat_table">
                             <thead>
@@ -62,14 +65,14 @@
                                     <th>Sana va vaqt</th>
                                     <th>Summa</th>
                                     <th>Izoh</th>
-                                    <th></th>
+                                    <th>three dot</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr>
                                     <td>01</td>
                                     <td>Justin Septimus</td>
-                                    <td>14/APR/2022 10:59</td>
+                                    <td><p class="stat_table_payed">To'landi</p> 14/APR/2022 10:59</td>
                                     <td>1 000 000 UZS</td>
                                     <td>Bir narsani, nimadir, bir narsani, nimadir, bir narsani, nimadir</td>
                                     <td></td>
@@ -77,7 +80,23 @@
                                 <tr>
                                     <td>01</td>
                                     <td>Justin Septimus</td>
-                                    <td>14/APR/2022 10:59</td>
+                                    <td><p class="stat_table_payed">To'landi</p> 14/APR/2022 10:59</td>
+                                    <td>1 000 000 UZS</td>
+                                    <td>Bir narsani, nimadir, bir narsani, nimadir, bir narsani, nimadir</td>
+                                    <td>Ko'proq</td>
+                                </tr>
+                                <tr>
+                                    <td>01</td>
+                                    <td>Justin Septimus</td>
+                                    <td><p class="stat_table_payed">To'landi</p> 14/APR/2022 10:59</td>
+                                    <td>1 000 000 UZS</td>
+                                    <td>Bir narsani, nimadir, bir narsani, nimadir, bir narsani, nimadir</td>
+                                    <td>Ko'proq</td>
+                                </tr>
+                                <tr>
+                                    <td>01</td>
+                                    <td>Justin Septimus</td>
+                                    <td><p class="stat_table_payed">To'landi</p> 14/APR/2022 10:59</td>
                                     <td>1 000 000 UZS</td>
                                     <td>Bir narsani, nimadir, bir narsani, nimadir, bir narsani, nimadir</td>
                                     <td></td>
@@ -85,39 +104,38 @@
                                 <tr>
                                     <td>01</td>
                                     <td>Justin Septimus</td>
-                                    <td>14/APR/2022 10:59</td>
+                                    <td><p class="stat_table_payed">To'landi</p> 14/APR/2022 10:59</td>
                                     <td>1 000 000 UZS</td>
                                     <td>Bir narsani, nimadir, bir narsani, nimadir, bir narsani, nimadir</td>
-                                    <td></td>
+                                    <td>Ko'proq</td>
                                 </tr>
                                 <tr>
                                     <td>01</td>
                                     <td>Justin Septimus</td>
-                                    <td>14/APR/2022 10:59</td>
+                                    <td><p class="stat_table_payed">To'landi</p> 14/APR/2022 10:59</td>
                                     <td>1 000 000 UZS</td>
                                     <td>Bir narsani, nimadir, bir narsani, nimadir, bir narsani, nimadir</td>
-                                    <td></td>
-                                </tr>
-                                <tr>
-                                    <td>01</td>
-                                    <td>Justin Septimus</td>
-                                    <td>14/APR/2022 10:59</td>
-                                    <td>1 000 000 UZS</td>
-                                    <td>Bir narsani, nimadir, bir narsani, nimadir, bir narsani, nimadir</td>
-                                    <td></td>
-                                </tr>
-                                <tr>
-                                    <td>01</td>
-                                    <td>Justin Septimus</td>
-                                    <td>14/APR/2022 10:59</td>
-                                    <td>1 000 000 UZS</td>
-                                    <td>Bir narsani, nimadir, bir narsani, nimadir, bir narsani, nimadir</td>
-                                    <td></td>
+                                    <td>Ko'proq</td>
                                 </tr>
                             </tbody>
                         </table>
-                        <div class="statistics_footer">
-                            
+                        <div class="statistics_footer stat_pagenetion">
+                            <span class="stat_pagenetion_text">Chiqimlar bir sahifada: 10</span>
+                            <span class="stat_pagenetion_text">276 dan 1-10</span>
+                            <div class="pagenetion_pages">
+                                <a class="page_control" href="#"><i class="fas fa-arrow-left"></i></a>
+                                <span class="stat_pagenetion_text pagenetion_page">1/28</span>
+                                <a class="page_control" href="#"><i class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                        <div class="filter_blog">
+                            <h3 class="filter_title">Saralash</h3>
+                            <div class="filter_radio">
+                                <input type="radio" name="filter">Boshqa chiqimlar
+                                <input type="radio" name="filter">Ish haqi
+                            </div>
+                            <h3 class="filter_title">sana bo‘yicha:</h3>
+                            <input type="date">
                         </div>
                     </div>
                 </div>
@@ -135,6 +153,7 @@
     </div>
 
     <script src="../js/script.js"></script>
+    <script src="../js/statistics.js"></script>
 
 </body>
 </html>
