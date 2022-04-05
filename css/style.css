@@ -1270,3 +1270,15 @@ th .three_dots{
     top: 50%;
     opacity: 1;
 }
+.filter_content{
+    position: relative;
+}
+.filter_title{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 18px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #94B8FF;
+    padding-bottom: 10px;
+}
