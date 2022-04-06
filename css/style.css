@@ -1045,6 +1045,9 @@ thead tr th{
 
 /************************************************ Statistics ******************************************/
 
+.statistics{
+    padding: 0 15px;
+}
 .statistics .container{
     background: #fff;
     border-radius: 12px;
@@ -1096,6 +1099,8 @@ thead tr th{
 .search_input{
     position: absolute;
     left: 70px;
+    top: 50%;
+    transform: translateY(-50%);
     width: 85%;
     color: #333;
     border: none;
@@ -1256,12 +1261,13 @@ th .three_dots{
     width: 300px;
     height: 500px;
     position: absolute;
-    /* top: -100%;  */
+    top: -100%; 
     left: 50%;
-    /* transform: translate(-50%, -50%); */
+    transform: translate(-50%, -50%);
     background: #fff;
-    transition: .3s;
-    /* opacity: 0; */
+    transition: all 277.385ms ease 0ms;
+    opacity: 0;
+    display: none;
     top: 0;
     padding: 20px;
     box-shadow: rgba(0, 0, 0, 0.35) 2000px 50px 1500px;
