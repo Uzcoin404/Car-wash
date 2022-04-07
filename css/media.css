@@ -337,6 +337,15 @@
     .footer{
         padding: 0 10px;
     }
+    .addOutlay_input{
+        min-width: 400px;
+    }
+    .addOutlay{
+        padding: 40px 25px;
+    }
+    .addOutlay_title{
+        font-size: 40px;
+    }
 }
 @media (max-width: 440px) {
     .tabl{
@@ -400,5 +409,28 @@
     }
     .table td:nth-child(1){
         padding-left: 10px;
+    }
+    .addOutlay{
+        border-radius: 20px;
+    }
+    .addOutlay_close{
+        right: 15px;
+        top: 15px;
+        width: 30px;
+        height: 30px;
+    }
+    .addOutlay_close i{
+        font-size: 18px;
+        line-height: 30px;
+    }
+    .addOutlay_input{
+        min-width: 320px;
+    }
+    .addOutlay{
+        padding: 30px 15px;
+    }
+    .addOutlay_title{
+        font-size: 32px;
+        padding-bottom: 15px;
     }
 }
