@@ -114,7 +114,27 @@
     .text-primar a, .xizmat-primn a, .yuvish-link, .yuvish_yol, .xizmat-link, .xizmat_yol, .tabl td, .tabl th{
         font-size: 24px !important;
     }
-    
+    .statBtn{
+        padding: 10px 15px;
+        font-size: 18px;
+    }
+    .search_input{
+        font-size: 18px;
+    }
+    .stat_search{
+        padding: 10px 0;
+        width: 550px;
+        min-height: 50px;
+    }
+    .stat_table thead tr th{
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+    .stat_table tbody tr td{
+        padding-top: 20px;
+        padding-bottom: 20px;
+        font-size: 18px;
+    }
 }
 @media (max-width: 1100px) {
     .order_car, .order_services, .order_info{
@@ -177,6 +197,12 @@
         margin: 0 auto;
         margin-bottom: 40px;
     }
+    .statistics_header{
+        flex-wrap: wrap;
+    }
+    .statistics_control{
+        margin-bottom: 15px;
+    }
 }
 @media (max-width: 992px) {
     .order_info{
@@ -237,6 +263,26 @@
     .card-body{
         padding: 30px 20px;
     }
+    .stat_table thead tr th{
+        padding-top: 12px;
+        padding-bottom: 12px;
+        font-size: 16px;
+    }
+    .stat_table tbody tr td{
+        padding-top: 15px;
+        padding-bottom: 15px;
+        font-size: 16px;
+    }
+    .stat_table_payed, .stat_pagenetion_text{
+        font-size: 16px;
+    }
+    .statistics_control{
+        flex-wrap: wrap-reverse;
+        margin-right: 15px;
+    }
+    .filter_btn{
+        margin-top: 10px;
+    }
 }
 @media (max-width: 768px) {
     .main_card_weather{
@@ -277,6 +323,10 @@
     }
     .settings_btn{
         margin: 0;
+    }
+    .stat_table{
+        overflow-x: scroll;
+        
     }
 }
 @media (max-width: 640px) {
@@ -327,7 +377,7 @@
         align-items: center;
     }
     .footer_text{
-        font-size: 18px;
+        font-size: 16px;
     }
     .social_media a{
         margin-left: 20px;
@@ -345,6 +395,18 @@
     }
     .addOutlay_title{
         font-size: 40px;
+    }
+    .stat_search input{
+        font-size: 16px;
+        width: 80%;
+    }
+    .stat_search{
+        max-width: 500px;
+        width: 100%;
+        min-width: 300px;
+    }
+    .statistics_header{
+        padding: 0 10px;
     }
 }
 @media (max-width: 440px) {
@@ -432,5 +494,18 @@
     .addOutlay_title{
         font-size: 32px;
         padding-bottom: 15px;
+    }
+    .stat_table thead tr th{
+        padding-top: 10px;
+        padding-bottom: 10px;
+        font-size: 14px;
+    }
+    .stat_table tbody tr td{
+        padding-top: 10px;
+        padding-bottom: 10px;
+        font-size: 14px;
+    }
+    .stat_table_payed, .stat_pagenetion_text{
+        font-size: 14px;
     }
 }
