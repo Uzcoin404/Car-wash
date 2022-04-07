@@ -1046,6 +1046,9 @@ thead tr th{
 
 /************************************************ Statistics ******************************************/
 
+.statistics{
+    padding: 0 15px;
+}
 .statistics .container{
     background: #fff;
     border-radius: 12px;
@@ -1256,7 +1259,7 @@ th .three_dots{
 .modal_blog{
     position: absolute;
     width: 300px;
-    top: 50%; 
+    top: -100% !important; 
     left: 50%;
     transform: translate(-50%, -50%);
     background: #fff;
@@ -1266,7 +1269,7 @@ th .three_dots{
     border-radius: 10px;
 }
 .modal_blog.active{
-    top: 50%;
+    top: 50% !important; 
     opacity: 1;
     box-shadow: 20px 50px 6000px 1000px rgba(0, 0, 0, 0.25);
 }
