@@ -1,5 +1,5 @@
 <p align="center">
-    <h1>Welcome to Robocode</h1>
+    <h1>Welcome to Car-wash</h1>
 </p>
 
 <p align="center">
